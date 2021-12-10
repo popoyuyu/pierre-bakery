@@ -20,6 +20,12 @@ namespace Bakery.Models
         {
           singlePastry += 2;
         }
+        else
+        {
+          {
+            singlePastry = pastryAmount * 2 - 1;
+          }
+        }
       }
       return singlePastry;
     }
