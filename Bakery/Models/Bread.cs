@@ -11,5 +11,18 @@ namespace Bakery.Models
       BreadAmount = breadAmount;
       BreadCost = 0;
     }
+
+    public int BreadPrice()
+    {
+      for (int i = 1; i <= BreadAmount; i++)
+      {
+        if (i % 3 != 0)
+        {
+          BreadPrice += 5;
+        }
+      }
+      return BreadCost;
+    }
   }
+}
 }

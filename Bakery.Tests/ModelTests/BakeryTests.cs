@@ -17,7 +17,8 @@ namespace Bakery.Tests
     [TestMethod]
     public void OneBread_ReturnsBreadPrice_5()
     {
-      Assert.AreEqual(5, breadAmount(1));
+      Bread newBread = new Bread(1);
+      Assert.AreEqual(5, newBread.BreadAmount(1));
     }
   }
 }
