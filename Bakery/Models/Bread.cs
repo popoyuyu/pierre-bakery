@@ -20,7 +20,6 @@ namespace Bakery.Models
         {
           loaf += 5;
         }
-
       }
       return loaf;
     }
