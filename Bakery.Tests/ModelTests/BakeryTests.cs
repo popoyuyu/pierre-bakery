@@ -28,13 +28,19 @@ namespace Bakery.Tests
     }
   }
   [TestClass]
-  public class Pastry
+  public class PastryTests
   {
     [TestMethod]
     public void PastryConstructor_CreatesInstancesOfPastry_Pastry()
     {
       Pastry newPastry = new Pastry();
       Assert.AreEqual(typeof(Pastry), newPastry.GetType());
+    }
+    [TestMethod]
+    public void OnePastry_ReturnsPastryPrice_2()
+    {
+      Pastry newPastry = new Pastry();
+      Assert.AreEqual(2, newPastry.PastryPrice(1));
     }
   }
 }
