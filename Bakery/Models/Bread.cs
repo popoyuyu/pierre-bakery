@@ -5,27 +5,24 @@ namespace Bakery.Models
   public class Bread
   {
     public int BreadCost { get; set; }
-    public int BreadAmount { get; set; }
-    public Bread(int breadAmount)
+    public int BreadTotal(int cost)
     {
-      BreadAmount = breadAmount;
-      BreadCost = 0;
+      BreadCost = cost;
+      return cost;
     }
 
-    public int BreadPrice()
+    public int BreadPrice(int breadAmount)
     {
-      for (int i = 1; i <= BreadAmount; i++)
+      int loaf = 0;
+      for (int i = 1; i <= breadAmount; i++)
       {
-        if (i % 3 == 0)
+        if (i % 3 != 0)
         {
-          BreadCost += 0;
+          loaf += 5;
         }
-        else
-        {
-          BreadCost += 5;
-        }
+
       }
-      return BreadCost;
+      return loaf;
     }
   }
 }
