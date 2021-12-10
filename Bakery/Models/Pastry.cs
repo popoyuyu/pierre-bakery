@@ -16,15 +16,13 @@ namespace Bakery.Models
       int singlePastry = 0;
       for (int i = 1; i <= pastryAmount; i++)
       {
-        if (i % 3 != 0)
+        if (i % 3 == 0)
         {
-          singlePastry += 2;
+          singlePastry -= 1;
         }
         else
         {
-          {
-            singlePastry = pastryAmount * 2 - 1;
-          }
+          singlePastry = (pastryAmount * 2) - 1;
         }
       }
       return singlePastry;
