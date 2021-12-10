@@ -19,7 +19,7 @@ namespace Bakery.Tests
     {
       Bread newBread = new Bread(1);
       Assert.AreEqual(1, newBread.BreadAmount);
-      Assert.AreEqual(5, newBread.BreadCost);
+      Assert.AreEqual(0, newBread.BreadCost);
     }
   }
 }
